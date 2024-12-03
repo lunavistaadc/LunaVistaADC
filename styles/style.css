@@ -78,6 +78,10 @@ body {
 	color: white !important;
 }
 
+.navbar-nav .ba-link {
+	color: white !important;
+}
+
 #home {
 	height: 100vh;
 	display: flex;
@@ -264,7 +268,25 @@ color: #ffffff;
 	transition: color 0.3s ease;
 }
 
+.navbar-nav .ba-link {
+	position: relative;
+	padding: 0.5rem 1rem;
+	color: white !important;
+	transition: color 0.3s ease;
+}
+
 .navbar-nav .nav-link::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width 0.3s ease;
+}
+
+.navbar-nav .ba-link::after {
 	content: '';
 	position: absolute;
 	bottom: -2px;
@@ -279,10 +301,17 @@ color: #ffffff;
 	width: 100%; 
 }
 
+.navbar-nav .ba-link.active::after {
+	width: 100%; 
+}
+
 .navbar-nav .nav-link:hover {
 	color: #ffdd57 !important; 
 }
 
+.navbar-nav .ba-link:hover {
+	color: #ffdd57 !important; 
+}
 
 .fade-in-section {
 	opacity: 0;
@@ -349,5 +378,197 @@ pointer-events: none;
 
 	100% {
 		transform: translateY(-1%);
+	}
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Animation for fading effect */
+.fade {
+    animation: fadeEffect 5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.9;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 14px; /* Adjust font size for readability */
+		overflow-x: hidden; /* Ensure no horizontal scrolling */
+	}
+
+	.mobile-message {
+		display: block;
+	}
+
+	.main-content {
+		display: none;
+	}
+
+	#loading-bar {
+		width: 90%;
+		height: 10px; /* Smaller loading bar height */
+	}
+
+	.navbar {
+		padding: 0.5rem 1rem;
+	}
+
+	.navbar-brand {
+		font-size: 1.2rem;
+	}
+
+	#home {
+		padding: 2rem 1rem;
+		text-align: center;
+	}
+
+	#home h1 {
+		font-size: 3rem; /* Scale down headline */
+	}
+	#home p {
+		font-size: 1rem;
+	}
+
+	.placeholder-image {
+		width: 50px; /* Smaller placeholder images */
+		height: 50px;
+	}
+
+	.stats-box h2 {
+		font-size: 2rem; /* Smaller stats text */
+	}
+
+	#models {
+		padding: 2rem 1rem;
+		text-align: center;
+	}
+
+	.model-placeholder {
+		height: 150px; /* Reduce model placeholder height */
+	}
+
+	#team {
+		padding: 2rem 1rem;
+	}
+
+	.owl-carousel .team-member img {
+		width: 100px; /* Smaller team member images */
+		height: 100px;
+	}
+
+	.owl-carousel .team-member h3 {
+		font-size: 1rem;
+	}
+
+	.owl-carousel .team-member p {
+		font-size: 0.8rem;
+	}
+
+	.scroll-buttons {
+		right: 10px; /* Adjust position */
+	}
+
+	.scroll-buttons button {
+		padding: 8px 12px; /* Smaller buttons */
+		margin: 5px 0;
+	}
+
+	.slide img {
+		width: 100%; /* Ensure slideshow images scale properly */
+	}
+
+	.prev, .next {
+		font-size: 14px; /* Adjust navigation button size */
+		width: 35px;
+		height: 35px;
+	}
+}
+
+@media (max-width: 480px) {
+	#home h1 {
+		font-size: 2.5rem; /* Further scale down headline for smaller devices */
+	}
+	.stats-box h2 {
+		font-size: 1.5rem;
+	}
+
+	.stats-box p {
+		font-size: 0.8rem;
+	}
+
+	.model-placeholder {
+		height: 120px; /* Further reduce placeholder height */
+	}
+
+	.owl-carousel .team-member img {
+		width: 80px; /* Smaller team member images for very small screens */
+		height: 80px;
 	}
 }
