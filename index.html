@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Luna Vista ADC</title>
+  <link rel="icon" type="image/x-icon" href="images/assets/logo.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body class="bg-dark">
+  <div id="particles-js"></div>
+
+  <header id="header">
+    <nav class="navbar navbar-expand-lg padding-small px-lg-4">
+      <div class="container-fluid ">
+
+        <div class="main-logo">
+          <a href="index.html">
+            <img src="images/assets/logo.png" width="70px" height="70px" alt="logo">
+          </a>
+        </div>
+
+        <button class="navbar-toggler mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ">
+            <div class="main-menu text-center d-lg-flex align-items-center">
+              <ul class="menu-list list-unstyled d-lg-flex m-0">
+                <li class="menu-item">
+                  <a href="index.html#" class="item-anchor active" data-effect="Home">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="index.html#adc" class="item-anchor" data-effect="Blogs">ADC</a>
+                </li>
+                <li class="menu-item">
+                  <a href="index.html#models" class="item-anchor" data-effect="Shop">Models</a>
+                </li>
+                <li class="menu-item">
+                  <a href="index.html#timeline" class="item-anchor" data-effect="Blogs">Timeline</a>
+                </li>
+                <li class="menu-item">
+                  <a href="blog.html" class="item-anchor" data-effect="Blogs">Blog</a>
+                </li>
+                <li class="menu-item">
+                  <a href="team.html" class="item-anchor" data-effect="Blogs">Our Team</a>
+                </li>
+                <li class="menu-item">
+                  <a href="index.html#contact-us" class="item-anchor" data-effect="Blogs">Contact Us</a>
+                </li>
+                <li class="menu-item ">
+                  <a href="https://instagram.com/lunavistaadc/"
+                    class="item-anchor" target="_blank"> <b>Insta</b> </a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-wrap d-flex my-4 my-lg-0 ">
+              <a href="https://www.nasa.gov/wp-content/uploads/2024/08/fy25-adc-handbook.pdf" target = "_blank" class="btn btn-linear btn-medium">More About ADC</a>
+              <a href="https://sketchfab.com/lunavistaadc/models" target = "_blank" class="btn btn-outline-linear btn-medium m-0">All Models</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <div id="billboard" class="padding-large overflow-hidden">
+    <div class="container">
+      <!-- Particles.js container -->
+      <div class="row d-flex flex-wrap align-items-center">
+        <div class="col-md-7 col-sm-8">
+          <div class="banner-content content-light m-0 mt-5 mt-md-0">
+            <h1 class="banner-title m-0">Luna Vista</h1>
+            <p class="grey">A NASA App Development Challenge Team</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-8">
+          <div class="image-holder">
+            <img src="images/assets/logo.png" alt="big-logo" class="banner-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="adc" class="padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="section-header align-center">
+          <h2 class="section-title light">About NASA ADC</h2>
+          <p>The NASA App Development Challenge is a STEM-focused initiative where students collaborate to develop real application related to space exploration and data visualization.</p>
+          <a href="https://www.nasa.gov/learning-resources/app-development-challenge/adc-handbook-and-coding-components-2024/" class="btn btn-linear btn-medium mt-4">Learn More</a>
+
+        </div>
+        <div class="product-content overflow-hidden">
+          <div class="row d-flex flex-wrap">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/artemis21.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Exploration</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/artemis22.jpg" alt="clients" class="circle-shape" style="height: 400px; width: 100%;">
+                  </div>
+                  <h3 class="block-title">Aerospace</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/artemis23.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Software Development</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/artemis21.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">STEM Challenge</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="models" class=" pattern-circle">
+    <div class="pattern-overlay">
+      <img src="images/pattern-overlay.png" alt="pattern-overlay">
+    </div>
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="col-md-6">
+          <div class="image-holder">
+            <div class="sketchfab-embed-wrapper"> <iframe title="Orion Model" width="550px" height="300px" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/b5bc43db9c86414e83d3c357ef1a0df3/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/orion-model-b5bc43db9c86414e83d3c357ef1a0df3?utm_medium=embed&utm_campaign=share-popup&utm_content=b5bc43db9c86414e83d3c357ef1a0df3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Orion Model </a> by <a href="https://sketchfab.com/lunavistaadc?utm_medium=embed&utm_campaign=share-popup&utm_content=b5bc43db9c86414e83d3c357ef1a0df3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> lunavistaadc </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=b5bc43db9c86414e83d3c357ef1a0df3" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="subscribe-content">
+            <div class="subscribe-header">
+              <h3 class="subscribe-title light">Our Models</h3>
+              <p>The NASA App Development Challenges requires the development of 3D models using CAD technologies. Some of Luna Vista's custom models are displayed. Open the SketchFab link to view our other models.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="timeline" class="padding-large">
+    <div class="container">
+      <div class="row overflow-hidden">
+        <div class="section-header align-center">
+          <h2 class="section-title light">Timeline</h2>
+          <p>Luna Vista was formed in October 2024, and has continued to make progress towards the ADC application.</p>
+        </div>
+        <div class="product-content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/item4.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Formation</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/item4.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Preparation</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/item4.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Development</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans border-rounded-pill">
+                <div class="product-detail text-center">
+                  <div class="clients-detail">
+                    <img src="images/item4.jpg" alt="clients" class="circle-shape">
+                  </div>
+                  <h3 class="block-title">Deployment</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog" class="padding-large">
+    <div class="container">
+      <div class="row overflow-hidden">
+        <div class="section-header d-md-flex justify-content-between ">
+          <h2 class="section-title light">Our Blog</h2>
+          <div>
+            <a href="blog.html" class="btn btn-linear btn-medium">Read our blog</a>
+          </div>
+        </div>
+        <div class="product-content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="highschool.html"> <img src="images/assets/highschool.jpg" alt="clients"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a class="view-btn">Outreach</a>
+                  </div>
+                  <a href="highschool.html">
+                    <h3 class="block-title">Luna Vista hosts 2 information sessions at local high school</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="library.html"> <img src="images/assets/outreach3.jpg" alt="clients"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a class="view-btn">Outreach</a>
+                  </div>
+                  <a href="library.html">
+                    <h3 class="block-title">Luna Vista hosts library session at local library</h3>
+                  </a>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="progress.html"> <img src="images/assets/app.jpg" alt="unreal"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a class="view-btn">Progress</a>
+                  </div>
+                  <a href="progress.html">
+                    <h3 class="block-title">Members of Luna Vista make great progress towards app</h3>
+                  </a>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="product-item bg-blue-trans p-3 rounded-1 mb-3">
+                <div class="product-detail">
+                  <div class="clients-detail">
+                    <a href="gather.html"> <img src="images/assets/orion-spacecraft-over-earth.jpg" alt="orion"> </a>
+                  </div>
+                  <div class="btn-card">
+                    <a class="view-btn">Formation</a>
+                  </div>
+                  <a href="gather.html">
+                    <h3 class="block-title">Team Luna Vista gathers to participate in NASA ADC</h3>
+                  </a>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section id="contact-us" class="padding-large">
+    <div class="section-header align-center">
+      <h2 class="section-title light">Contact Us</h2>
+      <p>If you would like to learn more about Luna Vista, follow us on Instagram <a href="https://www.instagram.com/lunavistaadc">@lunavistaadc</a> and check out our <a href="blog.html">blog</a>.</p>
+    </div>
+  </section>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
