@@ -1476,8 +1476,6 @@ blockquote cite {
 ------------------------------------------*/
 img.circle-shape {
   border-radius: 50%;
-  height: 140px;
-  width: 140px;
 }
 
 img.rounded-shape {
